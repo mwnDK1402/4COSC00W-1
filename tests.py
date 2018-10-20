@@ -45,5 +45,9 @@ class Test_TestDecode(unittest.TestCase):
     def test_dont_decode_æøå_1(self):
         self.assertEqual(shiftcipher.decode('æøå', 1), 'æøå')
 
+class Test_TestFindRotations(unittest.TestCase):
+    def test_khoor_zruog_wo(self):
+        self.assertEqual(shiftcipher.find_possible_rotations('khoor zruog', 'wo'), [3, 18])
+
 if __name__ == '__main__':
     unittest.main()
