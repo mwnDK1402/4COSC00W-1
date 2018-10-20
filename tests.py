@@ -20,6 +20,9 @@ class Test_TestEncode(unittest.TestCase):
     def test_encode_AbCdEfG_25(self):
         self.assertEqual(shiftcipher.encode('AbCdEfG', 25), 'AaCcEeG')
 
+    def test_encode_æøå_1(self):
+        self.assertEqual(shiftcipher.encode('æøå', 1), 'æøå')
+
 class Test_TestDecode(unittest.TestCase):
     def test_decode_z_1(self):
         self.assertEqual(shiftcipher.decode('z', 1), 'y')
@@ -38,6 +41,9 @@ class Test_TestDecode(unittest.TestCase):
 
     def test_decode_AbCdEfG_25(self):
         self.assertEqual(shiftcipher.decode('AbCdEfG', 25), 'AcCeEgG')
+
+    def test_dont_decode_æøå_1(self):
+        self.assertEqual(shiftcipher.decode('æøå', 1), 'æøå')
 
 if __name__ == '__main__':
     unittest.main()
