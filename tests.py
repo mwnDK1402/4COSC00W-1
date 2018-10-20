@@ -39,5 +39,5 @@ class Test_TestDecode(unittest.TestCase):
     def test_decode_AbCdEfG_25(self):
         self.assertEqual(shiftcipher.decode('AbCdEfG', 25), 'AcCeEgG')
 
-if __name__ == '__shiftcipher__':
-    unittest.shiftcipher()
+if __name__ == '__main__':
+    unittest.main()
