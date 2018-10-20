@@ -1,4 +1,4 @@
-# 4COSC00W-1
+# 4COSC00W-1 [![Build Status](https://travis-ci.org/mwnDK1402/4COSC00W-1.svg?branch=master)](https://travis-ci.org/mwnDK1402/4COSC00W-1)
 Programming Principles I - Assignment Specification (2018/9)
 
 # Flow chart
